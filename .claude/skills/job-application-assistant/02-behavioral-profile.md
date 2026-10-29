@@ -20,14 +20,13 @@ framework_version: 1.0.0
 | [DRIVE_4] | [LEVEL] | [DESCRIPTION] |
 
 ## Strongest Behaviors
-- **[BEHAVIOR_1]:** [DESCRIPTION]
-- **[BEHAVIOR_2]:** [DESCRIPTION]
-- **[BEHAVIOR_3]:** [DESCRIPTION]
+- **Team builder and retainer:** Grows teams and keeps them (Zscaler 12 to 40 at 98% retention; AWS 0% voluntary attrition over 24 months), through mentoring and structured career development. *[Inferred from LinkedIn About / CV - review before relying on this]*
+- **Calm under pressure:** Acts as incident lead for severity-1 events and resolves executive-level escalations. *[Inferred from LinkedIn About - review before relying on this]*
+- **Brings structure:** Repeatedly builds incident, problem, and change frameworks from scratch (Manhattan Associates, Zscaler, Maropost). *[Inferred from CV / LinkedIn - review before relying on this]*
 
 ## How You Work Best
-- [ENVIRONMENT_PREFERENCE_1]
-- [ENVIRONMENT_PREFERENCE_2]
-- [ENVIRONMENT_PREFERENCE_3]
+- Fast-paced, global environments ("I thrive in fast-paced, global environments"). *[Inferred from LinkedIn About - review before relying on this]*
+- Where technology operations are tied to strategic business outcomes and customer experience. *[Inferred from LinkedIn About - review before relying on this]*
 
 ## Growth Areas (frame positively in applications)
 - **[AREA_1]:** [HOW_TO_FRAME_IT_POSITIVELY]
@@ -44,7 +43,7 @@ When a job posting mentions these, flag as **potential friction** (not deal-brea
 - [ANOTHER_KEYWORD]
 
 ## Management Style Preferences
-- [WHAT_MANAGEMENT_STYLE_WORKS_FOR_YOU]
+- Leads through mentoring and coaching, with individual development plans and clear performance metrics. *[Inferred from LinkedIn About / CV - review before relying on this]*
 - [WHAT_DOESN'T_WORK]
 
 ## Using This in Applications

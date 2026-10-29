@@ -12,69 +12,82 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary:
+- **linkedin.com/jobs** - main source for Director/Head-level roles in UAE, India, and Europe; covered by the `linkedin-search` CLI
+- **bayt.com** - largest Gulf job board (WebSearch fallback, no CLI yet; scaffold with `/add-portal`)
+- **gulftalent.com** - senior Gulf roles (WebSearch fallback)
+- **naukrigulf.com** - Gulf roles, strong for Indian applicants (WebSearch fallback)
+- **naukri.com** - India (WebSearch fallback)
+- FreeHire via the `freehire-search` CLI
+
+Danish demo portals stay **disabled** (not this candidate's market).
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
 
+**Query language:** English only. Hindi is declared in the Languages table but these markets post senior tech roles in English.
+
 ## Query Categories
 
-Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above). Combine each query with your location terms (e.g. your city, region, or metro area) where the site supports it.
+Combine each query with a location term: "Abu Dhabi", "Dubai", "UAE", "India" (Bengaluru, Hyderabad, Pune, Gurugram), "Europe" / specific countries, or "remote".
 
-**Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
+### Priority 1: Reliability engineering leadership (SRE / Platform)
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
-
-These match your strongest and most desired career direction.
+Strongest and most desired direction.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
+site:linkedin.com/jobs "Director of Site Reliability Engineering" UAE
+site:linkedin.com/jobs "Head of SRE" OR "Head of Site Reliability" Dubai OR "Abu Dhabi"
+site:linkedin.com/jobs "Head of Platform Engineering" OR "Director of Platform Engineering" UAE
+site:bayt.com "Head of SRE" OR "SRE Manager" OR "Platform Engineering Manager"
+site:gulftalent.com "Site Reliability" Director OR Head
+site:linkedin.com/jobs "Director SRE" remote
+site:naukri.com "Director - Site Reliability Engineering" OR "Head of SRE"
+site:hirist.tech/j "Director" "Site Reliability" OR SRE OR "Platform Engineering"
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
+### Priority 2: Technology and cloud operations leadership (TechOps / CloudOps / DevOps)
 
-These match your domain expertise.
-
-```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
-```
-
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
-
-Adjacent roles you could pivot into.
+Domain expertise: operations, ITIL, regulated environments.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:linkedin.com/jobs "Head of TechOps" OR "Head of Technical Operations" UAE
+site:linkedin.com/jobs "Director of Cloud Operations" OR "Head of Cloud Operations" Dubai OR "Abu Dhabi"
+site:linkedin.com/jobs "Head of DevOps" OR "Director of DevOps" UAE OR remote
+site:bayt.com "Head of IT Operations" OR "Head of Infrastructure" Kubernetes
+site:gulftalent.com "Head of DevOps" OR "Head of Infrastructure"
+site:hirist.tech/j "DevOps Director" OR "Head of DevOps" OR "Head of Cloud Operations"
+site:linkedin.com/jobs "Head of Infrastructure" ArgoCD OR Terraform Europe "visa sponsorship"
 ```
 
-### Priority 4: Broader Technical / Consulting
+### Priority 3: Adjacent leadership roles
 
-Wider net for general technical roles.
+Roles the profile supports as a pivot.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "Head of Service Delivery" cloud UAE
+site:linkedin.com/jobs "VP Infrastructure" OR "VP Engineering Operations" SaaS
+site:linkedin.com/jobs "Technical Operations Director" gaming OR lottery OR fintech
+site:linkedin.com/jobs "Technology Resilience" OR "Operational Resilience" Head bank UAE
+site:linkedin.com/jobs "Technical Program Director" cloud migration
+```
+
+### Priority 4: Broader net (skill-led)
+
+```
+site:linkedin.com/jobs "SRE" "incident management" director UAE
+site:linkedin.com/jobs Kubernetes Terraform "CI/CD" "Head of" Dubai
+site:bayt.com "regulatory" "IT governance" head cloud
+site:linkedin.com/jobs "reliability" "regulatory governance" director Europe
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+- **Ideal:** Abu Dhabi, Dubai, remote
+- **Acceptable:** India (Bengaluru, Hyderabad, Pune, Gurugram, Mumbai, any major city; no sponsorship needed)
+- **Conditional:** Europe - only with employer visa sponsorship / relocation support
+- **Borderline (flag):** other GCC (Riyadh, Doha, etc.), US/UK without stated sponsorship
+- **Exclude:** roles reserved for UAE nationals (Emiratisation)
 
 ## Language Filter
 

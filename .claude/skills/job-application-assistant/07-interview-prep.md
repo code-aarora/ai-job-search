@@ -39,6 +39,108 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 
+## STAR Candidates (Complete Manually)
+
+### Unified incident/problem/change framework across three clouds
+**Source:** CV - Director, Platform and Operations, Maropost
+**What happened:** Designed one incident, problem, and change framework across Neto (AWS), REX (Azure), and MMC (GCP), 3 continents and 3 support functions; availability rose to 99.99% and MTTR fell 35%.
+**Why it matters:** "Tell me about driving reliability across teams", "how do you set SLOs", "change across a matrixed org"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Azure to GCP migration
+**Source:** CV - Director, Platform and Operations, Maropost
+**What happened:** Owned the Azure-native to GCP migration end to end with Terraform-based IaC, rearchitecting application components.
+**Why it matters:** "Largest migration you've led", "cost optimization", "managing risk in a big technical change"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Scaling the Zscaler SRE/DevOps team
+**Source:** CV / LinkedIn - Senior Manager, Cloud Operations, Zscaler
+**What happened:** Grew the team from 12 to 40 engineers with 5 managers at 98% retention.
+**Why it matters:** "How do you hire and scale teams", "managing managers", "retention"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Zero attrition at AWS
+**Source:** CV / LinkedIn - Operations Manager, Security (Ops), AWS
+**What happened:** Built and led a team of 18 engineers and first-time managers with 0% voluntary attrition over 24 months.
+**Why it matters:** "How do you develop people", "growing first-time managers"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Blameless post-mortems at AWS
+**Source:** CV - Operations Manager, Security (Ops), AWS
+**What happened:** Introduced blameless post-mortems that cut recurring high-severity incidents by 40% quarter over quarter.
+**Why it matters:** "Tell me about a major incident", "learning culture", "reducing repeat incidents"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### SOC2 Type II from scratch
+**Source:** CV / LinkedIn - Manhattan Associates
+**What happened:** Wrote Incident and Change Management policy from scratch and took the organization to full SOC2 Type II audit compliance.
+**Why it matters:** "Compliance in operations", "building process where none existed"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Blue-green releases at Manhattan Associates
+**Source:** CV - Senior Manager, Cloud Operations Center, Manhattan Associates
+**What happened:** Built blue-green deployments that moved releases from biweekly to weekly with no downtime.
+**Why it matters:** "Improving release velocity safely", "change management vs. speed"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### n8n alert auto-remediation
+**Source:** CV / LinkedIn - Maropost
+**What happened:** Implemented n8n for Neto to act on observability alerts with automated corrective steps, replacing L1 triage.
+**Why it matters:** "Toil reduction", "AI/automation in operations"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Real DR failover test
+**Source:** CV - Head of TechOps, Momentum
+**What happened:** Defined RTO/RPO targets and led a real DR failover test from the cloud TechOps side on a regulated platform.
+**Why it matters:** "Business continuity", "resilience in regulated environments"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### $500K vendor program
+**Source:** CV - Maropost
+**What happened:** Directed 3 external vendors and 4 cross-functional teams on a $500K infrastructure program; on time, on budget, zero critical SLA breaches.
+**Why it matters:** "Managing vendors", "delivering through people you don't manage"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
 ## Common Tough Questions
 
 ### "Why did you leave [previous company]?"

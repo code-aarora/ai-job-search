@@ -1,10 +1,10 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Ashish Arora
 
 <!-- SETUP: This file is populated by running /setup -->
 <!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Ashish Arora, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +13,76 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Ashish Arora
+- **Location:** Abu Dhabi, UAE (open to Abu Dhabi, Dubai, Europe, India, or remote; needs visa sponsorship everywhere except India)
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+  | Hindi | Native or bilingual |
+  | English | Full professional |
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Contact:** email.aarora@gmail.com | +971 50 545 2806 | +91 80500 20508 | linkedin.com/in/ashisharora14
+- **Status:** Employed - Head of TechOps, Momentum Corporate FZ LLC, Abu Dhabi (since May 2026); notice period 2 weeks; UAE residence visa sponsored by current employer
+- **LinkedIn headline:** "Technology Leader | CloudOps, SaaS, ITSM, DevOps | Scaling Global Teams (50+) | AI Automation | Security & Compliance (ITIL, SOC2) | Customer Experience | Driving 99.99% Uptime, Operational Excellence"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Advanced General Management Programme (AGMP)** (2023-2024) - Institute of Management Technology (IMT), Ghaziabad, with upGrad; 11-month programme, completed 3 Mar 2024
+- **B.E. in Information Technology, First Class** (2002-2006) - University of Rajasthan, Jaipur (Arya College of Engineering & I.T.)
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+Full detail in `.claude/skills/job-application-assistant/01-candidate-profile.md`. 20 years total.
+- **Head of TechOps** (May 2026 - Present) - **Momentum Corporate FZ LLC** (Abu Dhabi, UAE)
+  - Platform delivery and resilience for a regulated B2C lottery/betting SaaS platform; SLAs/SLOs; GCGRA compliance; DR/BCP with RTO/RPO and a real DR failover test
+- **Director, Platform and Operations** (Oct 2024 - 24 Apr 2026) - **Maropost** (Bengaluru, India)
+  - Reliability across Neto (AWS), REX (Azure), MMC (GCP); one incident/problem/change framework across 3 continents: 99.99% availability, MTTR -35%
+  - Azure to GCP migration with Terraform; ArgoCD GitOps and CI/CD; n8n alert auto-remediation; $500K vendor program with zero critical SLA breaches
+- **Operations Manager, Security (Ops)** (27 Mar 2022 - Oct 2024) - **Amazon Web Services** (Bengaluru, India)
+  - Operations for AWS IAM and Verified Permissions; team of 18 with 0% voluntary attrition over 24 months; blameless post-mortems cut recurring high-sev incidents 40%
+- **Senior Manager, Cloud Operations** (May 2020 - Mar 2022) - **Zscaler** (Mohali, India)
+  - >1 PB/hour traffic at 100% uptime SLA; team scaled 12 to 40 with 5 managers at 98% retention; runbook automation cut change-related incidents 45%
+- **Senior Manager, Cloud Operations Center** (Jan 2020 - May 2020) and **Manager, Cloud Operations** (Feb 2018 - Dec 2019) - **Manhattan Associates** (Bengaluru, India)
+  - SOC2 Type II compliance via incident/change policy from scratch; blue-green releases biweekly to weekly; 30-person global ops team at 100% SLA adherence
+- **Technical Project Manager** (1 Jul 2013 - Feb 2018) and **Sr. Network Engineer** (Sep 2008 - Jun 2013) - **IPsoft** (Bengaluru, India)
+- **Network Engineer** (Sep 2006 - Sep 2008) - Business Alliance Technologies (Delhi) - *profile only, never on CVs*
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** SRE leadership (SLIs/SLOs, incident/problem/change management), Kubernetes (EKS), AWS/Azure/GCP, Terraform, CI/CD design and deployment, GitOps (ArgoCD), observability
+- **Secondary:** Python, Ansible, n8n automation, Docker, Jenkins, CloudFormation, AI-assisted operations with Claude Code
+- **Domain:** Cloud operations for B2B/B2C SaaS; ITSM (ITIL v4); regulatory governance (GCGRA, SOC2 Type II, ISO 27001); DR/BCP; FinOps (part of SRE practice since 2018); OPEX/CAPEX budget ownership (Maropost; department level at Zscaler); on-call rota design (IPsoft, Manhattan Associates, Zscaler, Maropost); Azure Monitor/KQL (Maropost, Momentum); Application Insights; Entra ID (Momentum)
+- **Software:** ServiceNow, JIRA, Confluence, Grafana, Prometheus, ELK, Splunk, New Relic, CloudWatch, Defender, Sentinel
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **AWS Certified Solutions Architect - Associate** - 2022
+- **ITIL 4 Foundation** (Axelos) - 2022
+- **EXIN Agile Scrum Master** - 2022
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None.
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- None recorded.
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Team builder** - grows and retains teams (98% retention at Zscaler, 0% attrition at AWS) *[inferred]*
+- **Steady in incidents** - severity-1 incident lead, resolves executive escalations *[inferred]*
+- **Strengths:** building ITIL/SRE operating frameworks from scratch, managing managers, vendor and stakeholder management
+- **Growth areas:** not yet recorded
+- **Thrives in:** fast-paced, global environments where operations are tied to business outcomes
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Stability, accountability, and leadership
+- Learning opportunities
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- B2B/B2C SaaS and cloud platforms: product SaaS companies, hyperscalers
+- Regulated industries: gaming/lottery, fintech, banking, enterprise security
+- Region: UAE (Abu Dhabi, Dubai), India, Europe, remote
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Roles reserved for UAE nationals (Emiratisation)
+- Locations outside India without visa sponsorship
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

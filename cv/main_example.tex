@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Ashish Arora
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -40,7 +39,7 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Ashish Arora - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -48,15 +47,16 @@
 }}
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
+\usepackage{needspace}
 
 % personal data
-\name{[First]}{[Last]}
+\name{Ashish}{Arora}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\address{Abu Dhabi, UAE}{}{}
+\phone[mobile]{+971 50 545 2806}
+\email{email.aarora@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/ashisharora14}{linkedin.com/in/ashisharora14}}
 
 \begin{document}
 
@@ -67,7 +67,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Reliability and technology operations leader with 20 years in SRE, cloud operations, and DevOps for B2B and B2C SaaS. At Maropost I owned availability and incident response across three products on AWS, Azure, and GCP, rolling out one incident, problem, and change framework across 3 continents that raised availability to 99.99\% and cut MTTR by 35\%. I build reliability through engineering (Terraform, CI/CD design, GitOps with ArgoCD, observability, automated remediation) and grow the teams that run it: 12 to 40 engineers at Zscaler with 98\% retention.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -77,15 +77,17 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{SRE and Availability Engineering}: SLIs, SLOs, and SLAs; incident, problem, and change management (ITIL 4); blameless post-incident reviews; severity-1 incident leadership; on-call rota design.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Cloud and Platform}: AWS, Azure, GCP; Kubernetes (EKS); cloud landing zones; multi-cloud and multi-region operations; Azure to GCP migration; Microsoft Entra ID.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Automation and Release}: Terraform IaC; CI/CD pipeline design and deployment; GitOps with ArgoCD; blue-green and canary releases; runbook automation; n8n; AI-assisted operations with Claude Code.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Observability}: Azure Monitor, Application Insights, and KQL; Grafana, Prometheus, ELK, Splunk, New Relic, CloudWatch, Defender, Sentinel; alert-noise reduction and toil reduction.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Regulatory Governance and Resilience}: GCGRA, SOC2 Type II, ISO 27001; DR and business continuity with RTO/RPO targets.
+
+\item \textbf{Leadership}: managing managers in global matrixed teams; OPEX/CAPEX budgets and FinOps; vendor programs; executive QBRs and KPI reporting.
 
 \end{itemize}
 
@@ -97,54 +99,89 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{May 2026 - Present}{Head of TechOps}{Momentum Corporate FZ LLC}{Abu Dhabi, UAE}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item Own platform delivery and operational resilience for a regulated B2C lottery and betting SaaS platform, accountable for SLAs and SLOs across infrastructure, applications, cloud, and cybersecurity.
+    \item Keep operations compliant with the gaming regulator (GCGRA) alongside cybersecurity teams and integration partners; releases run through dev, stage, UAT, and production with SIT.
+    \item Own DR and business continuity: defined RTO/RPO targets, enforce backup integrity validation, and led a real DR failover test.
+    \item Lead the technical operations team with performance metrics and individual development plans.
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Oct 2024 - Apr 2026}{Director, Platform and Operations}{Maropost}{Bengaluru, India}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item Owned availability and incident response across Neto (AWS), REX (Azure), and MMC (GCP); rolled out one incident, problem, and change framework across 3 continents, raising availability to 99.99\% and cutting MTTR by 35\%.
+    \item Owned the Azure to GCP migration end to end with Terraform IaC, rearchitecting application components for a provider-independent architecture.
+    \item Owned the architecture decision for Neto, a B2B e-commerce platform on AWS hosting 1,500 customer sites; co-designed the Kubernetes architecture and landing zone for a new platform MVP.
+    \item Ran CI/CD and GitOps with ArgoCD; added release guardrails against change-induced incidents; implemented n8n to act on observability alerts with automated corrective steps.
+    \item Directed a \$500K vendor-managed infrastructure program (3 vendors, 4 teams) on time, on budget, with zero critical SLA breaches.
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Mar 2022 - Oct 2024}{Operations Manager, Security (Ops)}{Amazon Web Services}{Bengaluru, India}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
+    \item Owned operations for the distributed AWS IAM and Verified Permissions services and the operations launch decision for new features, keeping launches at zero downtime within SLAs and SLOs.
+    \item Built and led a team of 18 engineers and first-time managers with 0\% voluntary attrition over 24 months.
+    \item Incident lead for severity-1 events; introduced blameless post-mortems that cut recurring high-severity incidents by 40\% quarter over quarter.
+\end{itemize}}}
+
+\vspace{3pt}
+
+\needspace{5\baselineskip}
+\item{\cventry{May 2020 - Mar 2022}{Senior Manager, Cloud Operations}{Zscaler}{Mohali, India}{}{\vspace{1pt}
+\begin{itemize}
+    \item Accountable for cloud and infrastructure operations on distributed systems carrying more than 1 PB of traffic an hour to a 100\% uptime SLA.
+    \item Scaled the SRE and DevOps team from 12 to 40 engineers with 5 managers at 98\% retention; runbook automation cut change-related incidents by 45\%.
+\end{itemize}}}
+
+\vspace{3pt}
+
+\needspace{5\baselineskip}
+\item{\cventry{Feb 2018 - May 2020}{Senior Manager, Cloud Operations Center (from Jan 2020); Manager, Cloud Operations}{Manhattan Associates}{Bengaluru, India}{}{\vspace{1pt}
+\begin{itemize}
+    \item Wrote Incident and Change Management policy from scratch, taking the organization to full SOC2 Type II audit compliance.
+    \item Built blue-green deployments that moved releases from biweekly to weekly with no downtime on a B2B supply chain platform on AWS and EKS.
+    \item Built and led a 30-member global operations team with 100\% SLA adherence; cut stakeholder notification time by 40\%.
+\end{itemize}}}
+
+\vspace{3pt}
+
+\needspace{5\baselineskip}
+\item{\cventry{Jul 2013 - Feb 2018}{Technical Project Manager}{IPsoft Global Services}{Bengaluru, India}{}{\vspace{1pt}
+\begin{itemize}
+    \item Delivered IT transformation, data center, and cloud onboarding programs for global customers; cut manual work by 50\% using IPsoft's AIOps platform.
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{Sep 2008 - Jun 2013}{Sr. Network Engineer}{IPsoft India Pvt. Ltd.}{Bengaluru, India}{}{\vspace{1pt}
+\begin{itemize}
+    \item SME for firewall/VPN security deployments; ran global shift handoffs for 24/7 SLA-compliant coverage.
 \end{itemize}}}
 
 \end{itemize}
 
 % ============================================================
-%     EDUCATION
+%     EDUCATION AND CERTIFICATIONS
 % ============================================================
 
 \section{Education}
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
+\item{\cventry{2023-2024}{Advanced General Management Programme}{Institute of Management Technology, Ghaziabad}{India}{}{}}
 
-\vspace{3pt}
+\item{\cventry{2002-2006}{B.E. in Information Technology, First Class}{University of Rajasthan (Arya College of Engineering \& I.T.)}{Jaipur, India}{}{}}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
+\end{itemize}
 
+\section{Certifications}
+\vspace{1pt}
+\begin{itemize}
+\item {AWS Certified Solutions Architect, Associate (2022); ITIL 4 Foundation, Axelos (2022); EXIN Agile Scrum Master (2022).}
 \end{itemize}
 
 % ============================================================
@@ -154,27 +191,7 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item {English (full professional), Hindi (native).}
 \end{itemize}
 
 % ============================================================

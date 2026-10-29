@@ -30,6 +30,11 @@ If the candidate's permit also constrains *hours* or *start date* (a student vis
 
 A role that fails this gate is not scored and not drafted. Everything below applies only to roles that pass it.
 
+**Candidate-specific rules (Ashish Arora):**
+- **UAE:** FAIL any role reserved for UAE nationals ("UAE National only", "Emirati only", "Emiratisation role", "UAE Nationals preferred" where it reads as a restriction). Quote the wording. Other UAE roles (Abu Dhabi, Dubai) are fine.
+- **Europe and other non-India locations:** the candidate needs employer visa sponsorship. Treat "we sponsor" / "visa support" / "relocation package" as PASS; silence as PROCEED, unverified (check the careers page); "must already have the right to work in <country>" / "no sponsorship" as FAIL.
+- **India:** no sponsorship needed.
+
 ## Language Gate — run before scoring
 
 This gate checks a posting's language requirements against what the candidate actually speaks. It is not one of the five Scoring Dimensions below - it runs before them, structured the same way as the Eligibility Gate above: read the posting, classify against profile data, and treat a hard mismatch as FAIL before scoring. Its verdict is tracked downstream: `/rank` records the result as `language_gate` (PASS/FAIL/FLAG) with a supporting `language_note`, persists both into `seen_jobs.json`, and treats a FAIL as a shortlist veto; `/scrape` surfaces the flag in its results table and carries a language-override rule for postings whose ad language differs from the role's working language. `/apply`'s language detection (Step 1, which extracts a posting's required language generically) feeds this same check.
@@ -60,9 +65,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** SRE leadership (SLIs/SLOs, availability, incident/problem/change management, blameless reviews), cloud operations on AWS/Azure/GCP, Kubernetes (EKS), Terraform IaC, CI/CD design and deployment, GitOps with ArgoCD, observability (Grafana, Prometheus, ELK, Splunk, New Relic, CloudWatch), ITIL v4, regulatory governance (SOC2 Type II, ISO 27001, GCGRA), DR/BCP, vendor management, building and running large ops teams, FinOps, OPEX/CAPEX budget ownership, on-call rota design, Azure Monitor/KQL
+**Moderate match areas:** hands-on scripting and automation (Python, Ansible, n8n), cloud migration and rearchitecture, security operations (AWS IAM, firewall/VPN background, Defender/Sentinel), release engineering, AI-assisted operations (Claude Code)
+**Weak match areas:** hands-on software development (no professional coding role), ML/data engineering, deep specialist roles (e.g. hands-on Kubernetes internals, database engineering), roles requiring a degree beyond B.E. + AGMP
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +79,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Director/Head-level SRE, Cloud Operations, TechOps, and Platform Operations for B2B/B2C SaaS; incident and reliability programs across multiple products and clouds; managing managers (teams of 18-40); regulated environments (gaming, enterprise security, SOC2)
+**Moderate:** Head of Platform Engineering / DevOps (builds platforms through teams rather than hands-on), IT service delivery leadership, technical program management, VP Infrastructure at smaller companies
+**Entry-level:** Individual-contributor SRE/DevOps engineering roles, software engineering management of product teams, CTO roles
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,9 +96,11 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
+- Abu Dhabi or Dubai: PASS
+- Remote: PASS
+- India (any major city): PASS, no sponsorship needed
+- Europe: PASS only with visa sponsorship (see Eligibility Gate); otherwise FAIL
+- Other locations (e.g. KSA, US): FLAG (discuss with user)
 - Frequent international travel: FLAG (discuss with user)
 
 ### 5. Career Alignment & Motivation (0-100)
@@ -107,19 +114,20 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Director/Head-level leadership of SRE, Platform, or Cloud/Tech Operations, with clear ownership and accountability for reliability outcomes
+- A stable employer where he can build and lead a long-term team
+- Continued learning and growth toward VP-level infrastructure/operations leadership
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: stability, accountability (owning outcomes), leadership of teams and managers, learning opportunities
+- Tasks that drain: not yet recorded (ask the candidate)
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: values stability; prefer established or well-funded employers over early-stage or high-churn companies
+- **Flexibility**: Abu Dhabi, Dubai, India, Europe, or remote; visa sponsorship required outside India
+- **Professional development**: learning opportunities are a stated motivator
+- **Salary**: expectation in AED, not set yet (treat as no filter)
 
 ### 6. Salary Benchmark (Optional)
 

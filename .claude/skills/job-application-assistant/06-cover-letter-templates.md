@@ -76,7 +76,7 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     TITLE NAME
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{}{\Huge{[YOUR_NAME]}}{  \href{mailto:[YOUR_EMAIL]}{[YOUR_EMAIL]} | [YOUR_PHONE] |  \urlstyle{same}\href{[YOUR_LINKEDIN_URL]}{LinkedIn}
+\namesection{}{\Huge{Ashish Arora}}{  \href{mailto:email.aarora@gmail.com}{email.aarora@gmail.com} | +971 50 545 2806 |  \urlstyle{same}\href{https://www.linkedin.com/in/ashisharora14}{LinkedIn}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,7 +108,7 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 % doubled break triggers "! LaTeX Error: There's no line here to end."
 \closing{Kind regards,}
 
-\signature{[YOUR_NAME]}
+\signature{Ashish Arora}
 \end{flushright}
 \end{document}
 ```
@@ -129,6 +129,12 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 - If you know the hiring manager's name: "Dear [First Last],"
 - If you know the team: "Dear [Company] hiring team,"
 - Generic: "Dear [Company]," (avoid "To whom it may concern")
+
+### Location and Relocation Line (candidate rule, 2026-10-29)
+Applies to every cover letter, whichever portal or channel the posting came from:
+- **India roles:** say he can relocate to India (e.g. "I can relocate from Abu Dhabi to Hyderabad without a visa, on two weeks' notice"). As an Indian citizen he needs no visa there.
+- **Abu Dhabi and Dubai roles:** never mention relocating, to India or anywhere else. Say he is already based in Abu Dhabi where it helps the letter.
+- **Other locations (Europe, KSA, remote):** never mention relocating to India; handle visa sponsorship per the Eligibility Gate in `04-job-evaluation.md`.
 
 ### Length - Hard 1-Page Limit
 - Target: 1 page including signature block

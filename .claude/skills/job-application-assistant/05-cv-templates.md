@@ -59,7 +59,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Ashish Arora - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -69,13 +69,13 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Ashish}{Arora}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\address{Abu Dhabi, UAE}{}{}
+\phone[mobile]{+971 50 545 2806}
+\email{email.aarora@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/ashisharora14}{linkedin.com/in/ashisharora14}}
 
 \begin{document}
 \makecvtitle
@@ -137,11 +137,11 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Director/Head of SRE and Platform Reliability roles:**
+> Reliability leader with 20 years in cloud operations, SRE, and DevOps for B2B SaaS. At Maropost I owned availability and incident response across three products on AWS, Azure, and GCP, rolling out one incident, problem, and change framework across 3 continents that raised availability to 99.99% and cut MTTR by 35%. I build reliability through engineering: Terraform IaC, CI/CD design, GitOps with ArgoCD, observability, and automated remediation, and I grow the teams that run it (Zscaler: 12 to 40 engineers at 98% retention).
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Head of TechOps / Cloud Operations roles in regulated environments:**
+> Technology operations leader who runs regulated, always-on platforms. As Head of TechOps at Momentum I own SLAs, SLOs, DR/BCP, and regulatory compliance (GCGRA) for a lottery and betting SaaS platform; earlier I took Manhattan Associates to SOC2 Type II compliance with incident and change policy built from scratch, and ran operations for AWS IAM and Verified Permissions. ITIL 4 and AWS Solutions Architect certified, with a record of building and retaining large global teams.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 
